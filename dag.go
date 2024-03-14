@@ -61,6 +61,7 @@ func sliceFile(node File, store KVStore, h hash.Hash) *Object {
 	res, _ := dfsForSlice(hight, node, store, 0, h)
 	return res
 }
+
 func sliceDirectory(node Dir, store KVStore, h hash.Hash) *Object {
 	iter := node.It()
 	tree := &Object{}
